@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>style3</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: white;
+        background-color: darkred;
+      }
+
+      /* h1 {
+        display: none;
+      }
+
+      h3 {
+        display: none;
+      } */
+
+      h1 {
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 3.5em;
+      }
+
+      h1 span {
+        color: rgb(199, 188, 126);
+        text-decoration: underline;
+      }
+
+      h3 {
+        display: none;
+      }
+
+      .container {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        padding: 20px 40px 40px;
+        border: 14px solid darkred;
+        box-shadow: 5px 5px 15px rgba(1, 1, 1, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.3), inset 5px 5px 15px rgba(1, 1, 1, 0.4), inset -5px -5px 15px rgba(255, 255, 255, 0.2);
+        margin: 50px auto;
+        border-radius: 25px;
+        flex-direction: column;
+        gap: 5px;
+      }
+
+      .container h2 {
+        text-align: center;
+        padding: 10px 5px 15px;
+        margin-bottom: 20px;
+        letter-spacing: 0.1em;
+        font-size: 2em;
+      }
+
+      .container .inputBox {
+        width: 100%;
+        padding: 5px 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .container .inputBox input {
+        background-color: darkred;
+        box-shadow: 5px 5px 15px rgba(1, 1, 1, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.3), inset 5px 5px 15px rgba(1, 1, 1, 0.1), inset -5px -5px 15px rgba(255, 255, 255, 0.03);
+        border: none;
+        padding: 10px 40px;
+        border-radius: 25px;
+        font-size: 1.4em;
+        margin: 5px;
+        outline: none;
+        width: 100%;
+        border: 1px solid darkred;
+        transition: 0.4s;
+        color: white;
+      }
+
+      .container .inputBox span {
+        color: rgb(245, 177, 177);
+        font-size: 1.3em;
+        position: absolute;
+        left: 0;
+        margin-left: 80px;
+        margin-top: -45px;
+        letter-spacing: 0.12em;
+        transition: 0.4s;
+      }
+
+      .container .inputBox input:focus {
+        border: 1px solid white;
+        background-image: linear-gradient(to right, darkred, rgb(168, 0, 0));
+        transform: scale(1.05);
+      }
+
+      .container .inputBox input:focus ~ span,
+      .container .inputBox input:valid ~ span {
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 0.7em;
+        padding: 2px 3px;
+        font-weight: lighter;
+        transform: translateX(-15px) translateY(-20px);
+        color: white;
+        background-color: darkred;
+      }
+
+      .container .inputBox input[type='button'] {
+        background-color: rgb(184, 2, 2);
+        letter-spacing: 0.2em;
+        color: rgb(240, 240, 240);
+        box-shadow: inset -5px -5px 15px rgba(1, 1, 1, 0.1), inset 5px 5px 15px rgba(255, 255, 255, 0.05);
+        margin-top: 15px;
+        animation: berubahwarnabg 5s infinite alternate;
+        cursor: pointer;
+      }
+      .container .inputBox input[type='button']:focus {
+        transform: scale(1);
+      }
+
+      .container p {
+        text-align: center;
+      }
+
+      .container p a {
+        color: rgb(179, 163, 76);
+        font-weight: bolder;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 1.1em;
+      }
+
+      @keyframes berubahwarna {
+        from {
+          color: white;
+        }
+
+        to {
+          color: red;
+        }
+      }
+
+      @keyframes berubahwarnabg {
+        from {
+          background-color: rgb(179, 163, 76);
+          color: black;
+        }
+
+        to {
+          background-color: white;
+          color: red;
+        }
+      }
+
+      /* container 2 */
+
+      .container2 {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        padding: 20px 40px 40px;
+        border: 14px solid darkred;
+        box-shadow: 5px 5px 15px rgba(1, 1, 1, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.3), inset 5px 5px 15px rgba(1, 1, 1, 0.4), inset -5px -5px 15px rgba(255, 255, 255, 0.2);
+        margin: 25px auto;
+        border-radius: 25px;
+        flex-direction: column;
+        gap: 5px;
+      }
+      .container2 h2 {
+        text-align: center;
+        padding: 10px 5px 15px;
+        margin-bottom: 20px;
+        letter-spacing: 0.1em;
+        font-size: 2em;
+      }
+
+      .container2 .inputBox {
+        width: 100%;
+        padding: 5px 20px;
+        text-align: center;
+        position: relative;
+      }
+
+      .container2 .inputBox input {
+        background-color: darkred;
+        box-shadow: 5px 5px 15px rgba(1, 1, 1, 0.4), -5px -5px 15px rgba(255, 255, 255, 0.3), inset 5px 5px 15px rgba(1, 1, 1, 0.1), inset -5px -5px 15px rgba(255, 255, 255, 0.03);
+        border: none;
+        padding: 10px 40px;
+        border-radius: 25px;
+        font-size: 1.4em;
+        margin: 5px;
+        outline: none;
+        width: 100%;
+        border: 1px solid darkred;
+        transition: 0.4s;
+        color: white;
+      }
+
+      .container2 .inputBox span {
+        color: rgb(245, 177, 177);
+        font-size: 1.3em;
+        position: absolute;
+        left: 0;
+        margin-left: 80px;
+        margin-top: -45px;
+        letter-spacing: 0.12em;
+        transition: 0.4s;
+      }
+
+      .container2 .inputBox input:focus {
+        border: 1px solid white;
+        background-image: linear-gradient(to right, darkred, rgb(168, 0, 0));
+        transform: scale(1.05);
+      }
+
+      .container2 .inputBox input:focus ~ span,
+      .container2 .inputBox input:valid ~ span {
+        border: 1px solid white;
+        border-radius: 10px;
+        font-size: 0.7em;
+        padding: 2px 3px;
+        font-weight: lighter;
+        transform: translateX(-15px) translateY(-20px);
+        color: white;
+        background-color: darkred;
+      }
+
+      .container2 .inputBox input[type='button'] {
+        background-color: rgb(184, 2, 2);
+        letter-spacing: 0.2em;
+        color: rgb(240, 240, 240);
+        box-shadow: inset -5px -5px 15px rgba(1, 1, 1, 0.1), inset 5px 5px 15px rgba(255, 255, 255, 0.05);
+        margin-top: 15px;
+        animation: berubahwarnabg 5s infinite alternate;
+        cursor: pointer;
+      }
+      .container2 .inputBox input[type='button']:focus {
+        transform: scale(1);
+      }
+
+      .container2 p {
+        text-align: center;
+      }
+
+      .container2 p a {
+        color: rgb(179, 163, 76);
+        font-weight: bolder;
+        text-decoration: none;
+        margin-left: 10px;
+        font-size: 1.1em;
+      }
+
+      #time {
+        font-weight: normal;
+        font-size: 2em;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+      }
+
+      /* responsive breakpoint phone */
+      @media screen and (max-width: 576px) {
+        #time {
+          font-weight: lighter;
+          font-size: 1.5em;
+          display: block;
+          text-align: center;
+          padding: 10px;
+        }
+
+        h1 {
+          display: block;
+          text-align: center;
+          padding: 10px;
+          margin-top: 25px;
+          font-size: 2.5em;
+        }
+
+        h1 span {
+          color: rgb(199, 188, 126);
+        }
+
+        h3 {
+          display: block;
+          text-align: center;
+          padding: 5px;
+          letter-spacing: 0.3em;
+          font-size: 1.5em;
+        }
+
+        .container,
+        .container2 {
+          width: 95%;
+          padding: 20px 10px;
+          margin: 30px auto;
+        }
+
+        .container .inputBox,
+        .container2 .inputBox {
+          padding: 10px;
+        }
+
+        .container .inputBox span,
+        .container2 .inputBox span {
+          font-size: 1em;
+          text-align: center;
+          left: 0;
+          margin-left: 60px;
+          margin-top: -37px;
+        }
+
+        .container .inputBox input,
+        .container2 .inputBox input {
+          font-size: 1em;
+        }
+
+        .container .inputBox input:focus ~ span,
+        .container .inputBox input:valid ~ span {
+          font-size: 0.7em;
+        }
+
+        .container2 .inputBox input:focus ~ span,
+        .container2 .inputBox input:valid ~ span {
+          font-size: 0.7em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="master">Andy<span> Art</span></h1>
+    <h3>Phone Mode</h3>
+    <p id="time"></p>
+
+    <div class="container">
+      <h2>Log In</h2>
+      <div class="inputBox">
+        <input type="text" required />
+        <span>Username</span>
+      </div>
+      <div class="inputBox">
+        <input type="password" required />
+        <span>Password</span>
+      </div>
+      <div class="inputBox">
+        <input type="button" value="LOGIN" />
+      </div>
+      <p>Don't have an Account? <a href="#">Sign Up</a></p>
+    </div>
+
+    <div class="container2">
+      <h2>Sign Up</h2>
+      <div class="inputBox">
+        <input type="text" required />
+        <span>Username</span>
+      </div>
+      <div class="inputBox">
+        <input type="text" required />
+        <span>Email</span>
+      </div>
+      <div class="inputBox">
+        <input type="password" required />
+        <span>Password</span>
+      </div>
+      <div class="inputBox">
+        <input type="password" required />
+        <span>Confirm Password</span>
+      </div>
+      <div class="inputBox">
+        <input type="button" value="REGISTER" />
+      </div>
+      <p>Already a Member?<a href="#">Log In</a></p>
+    </div>
+
+    <script>
+      const container1 = document.querySelector('.container');
+      const container2 = document.querySelector('.container2');
+      const signup = document.querySelector('.container p a');
+      const login = document.querySelector('.container2 p a');
+
+      signup.onclick = function () {
+        container1.style.display = 'none';
+        container2.style.display = 'grid';
+      };
+
+      login.onclick = function () {
+        container2.style.display = 'none';
+        container1.style.display = 'grid';
+      };
+
+      //
+
+      function displayTime() {
+        const time = new Date();
+        document.getElementById('time').innerHTML = '<span style="font-weight: lighter">Sekarang Pukul : </span><br>' + time.toLocaleTimeString();
+        setInterval(displayTime, 1000);
+      }
+
+      displayTime();
+    </script>
+  </body>
+</html>
